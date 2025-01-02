@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: notification
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: flight-service-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.type.mapping: event:com.project_flight.event.AlertEvent
+        spring.json.value.default.type: com.project_flight.event.AlertEvent
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 71f2ea5b449b22
+    password: 642186110f5494
+
+server:
+  port: 8082
