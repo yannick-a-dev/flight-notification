@@ -1,6 +1,6 @@
 package com.project_flight_notification;
 
-import com.project_flight.NotificationApplication;
+import com.flight.project_flight.NotificationApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestNotificationApplication {

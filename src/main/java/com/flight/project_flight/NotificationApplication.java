@@ -1,4 +1,4 @@
-package com.project_flight;
+package com.flight.project_flight;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
