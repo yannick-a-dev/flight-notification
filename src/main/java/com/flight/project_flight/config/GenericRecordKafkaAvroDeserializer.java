@@ -36,6 +36,6 @@ public class GenericRecordKafkaAvroDeserializer implements Deserializer<GenericR
 
     @Override
     public void close() {
-        avroDeserializer.close();  // Close the internal deserializer
+        avroDeserializer.close();
     }
 }
